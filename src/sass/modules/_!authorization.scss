@@ -1,0 +1,31 @@
+.authorization {
+  display: flex;
+  align-items: center;
+  &__icon {
+    fill: var(--color-white);
+    width: 2.4rem;
+    height: 2.4rem;
+    margin-right: 1.5rem;
+    @include large-mobile {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+  &__link {
+    font-size: 1.6rem;
+    line-height: 1.375em;
+    display:inline-block;
+    transition: all linear .2s;
+    &:hover {
+      text-shadow:0 0 .2rem var(--color-white);
+    }
+    &:not(:last-child) {
+      margin-right: .5rem;
+      padding-right: .5rem;
+      border-right: .1rem solid rgba(#fff, .3);
+    }
+    @include large-mobile {
+      display: none;
+    }
+  }
+}

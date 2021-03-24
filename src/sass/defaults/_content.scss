@@ -1,0 +1,87 @@
+.content p,
+.p,
+.content li,
+.li {
+	font-size: 1.8rem;
+	line-height: 1.333em;
+	@include large-mobile {
+		font-size: 1.6rem;
+	}
+	@include small-mobile {
+		font-size: 1.4rem;
+	}
+	@include min-mobile {
+		font-size: 1.2rem;
+	}
+}
+
+.content ul,
+.content ol {
+}
+
+.content b,
+.b {
+	font-weight: bold;
+}
+
+.content strong,
+.strong {
+	font-weight: 500;
+}
+
+.content a,
+.a {
+	color: var(--color-green);
+}
+
+.h1,
+.content h1,
+.h2,
+.content h2,
+.h3,
+.content h3,
+.h4,
+.content h4,
+.h5,
+.content h5,
+.h6,
+.content h6 {
+	font-family: 'Mont', Arial, sans-serif;
+	font-weight: 900;
+}
+
+.h1,
+.content h1 {
+	font-size: 4.5rem;
+	line-height: 1.28em;
+	@include large-mobile {
+		font-size: 4rem;
+		line-height: 1.27em;
+	}
+	@include small-mobile {
+		font-size: 3.8rem;
+	}
+	@include min-mobile {
+		font-size: 3.6rem;
+	}
+}
+
+.h2,
+.content h2 {
+}
+
+.h3,
+.content h3 {
+}
+
+.h4,
+.content h4 {
+}
+
+.h5,
+.content h5 {
+}
+
+.h6,
+.content h6 {
+}

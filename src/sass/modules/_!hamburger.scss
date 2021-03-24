@@ -1,0 +1,69 @@
+.hamburger {
+  display: none;
+  @include large-mobile {
+    flex-grow: 0 !important;
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    border-radius: .5rem;
+    padding: .5rem;
+    background-color: var(--color-white);
+    position: relative;
+    overflow: hidden;
+    z-index: 5;
+    &__lines {
+      background-color: var(--color-green);
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+
+      width: calc(100% - 1.7rem);
+      height: 0.20rem;
+      display: block;
+      left: .5rem;
+      border-radius: 1em;
+      transition: all linear .2s;
+      &::before,
+      &::after{
+        content: '';
+        height: 0.15rem;
+        background-color: var(--color-green);
+        position: absolute;
+        left: .5rem;
+        transition: all linear .2s;
+        display: block;
+      }
+      &::before {
+        width: calc(100% + .7rem);
+        top: -.5rem;
+
+        left: 0;
+      }
+      &::after {
+        top: .6rem;
+        width: 100%;
+        left: auto;
+        right: -.7rem;
+      }
+    }
+    &.is-active {
+      .hamburger__lines {
+        background-color: transparent;
+        &::before {
+          transform: rotate(
+                          45deg
+          );
+          transform-origin: .4rem .4rem;
+        }
+        &::after {
+          width: calc(100% + .7rem);
+          transform: rotate(
+                          -45deg
+          );
+          top: 0;
+        }
+      }
+
+    }
+  }
+}

@@ -1,0 +1,85 @@
+.btn {
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.375em;
+  padding: 1rem 1.5rem;
+  border-radius: 1rem 0;
+  transition: all linear .2s;
+  border: .1rem solid transparent;
+  white-space: nowrap;
+  display: inline-block;
+  text-align: center;
+  @include large-mobile {
+    font-size: 1.4rem;
+  }
+  &_white {
+    background-color: var(--color-white);
+    color: var(--color-accent);
+    &:hover {
+      box-shadow: 0 0 1rem var(--color-white);
+      color: var(--color-accent-hover);
+    }
+  }
+  &_green {
+    background-color: var(--color-accent);
+    color: var(--color-white);
+    &:hover {
+      box-shadow: 0 0 1rem var(--color-accent-hover);
+      background-color: var(--color-accent-hover);
+    }
+  }
+  &_border-white {
+    background-color: transparent;
+    border-color: var(--color-white);
+    &:hover {
+      border-color: transparent;
+      background-color: var(--color-accent-hover);
+      box-shadow: 0 0 1rem var(--color-accent-hover);
+    }
+  }
+  &_border-orange {
+    background-color: transparent;
+    border-color: var(--color-orange);
+  }
+  &_medium {
+    padding: 1.8rem 3rem;
+    @include small-mobile {
+      padding: 1.5rem;
+      white-space: normal;
+    }
+  }
+  &_radius {
+    border-radius: 1rem;
+  }
+  &_icon {
+    display: inline-flex;
+    align-items: center;
+    padding: 1rem 2.3rem;
+    justify-content: center;
+    &:hover {
+      svg {
+        fill: var(--color-accent-hover);
+      }
+    }
+    svg {
+      width: 2rem;
+      height: 2rem;
+      flex-shrink: 0;
+      margin-right: 2rem;
+      fill: var(--color-accent);
+      transition: all linear .2s;
+      @include large-mobile {
+        margin-right: 1rem;
+      }
+    }
+    @include small-mobile {
+      font-size: 1.2rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      svg {
+        width: 1.4rem;
+        height: 1.4rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.main {
+  padding-top: 10.2rem;
+  position: relative;
+  @include large-mobile {
+    padding-top: 6rem;
+  }
+}
+.resize-animation-stopper * {
+  animation: none !important;
+  transition: none !important;
+}
+a,
+button,
+input,
+select,
+option,
+textarea,
+[tabindex]{
+  &:focus {
+    outline: thick dashed var(--color-orange);
+    outline-width: .2rem;
+  }
+
+}

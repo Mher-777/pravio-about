@@ -1,0 +1,90 @@
+header.header
+	.header__top
+		.container
+			.header__top-inner.flex.flex_justify.flex_vertical
+				.header__cell.header__cell_left.flex.flex_vertical(data-da="header__nav, first, 580")
+					a(href="#").header__cell-link Работа юристу
+					.header__address.address(tabindex="0")
+						span.address__text Москва
+						.address__dropdown
+							a(href="#" ).address__link Москва
+							a(href="#" ).address__link Краснодар
+							a(href="#" ).address__link Нижний Новгород
+							a(href="#" ).address__link Омск
+							a(href="#" ).address__link Самара
+							a(href="#" ).address__link Санкт-Петербург
+
+				.header__cell.header__cell_right.flex.flex_vertical
+					.authorization.header__authorization
+						.authorization__icon
+							+icon('user')
+						a(href="#").authorization__link Войти
+						a(href="#").authorization__link Регистрация
+					a(href="tel:+74954077755" data-da="header__inner, 1, 580").phone.header__phone
+						+icon('phone') &nbsp;
+						span(data-mobile-text="Бесплатная горячая линия") +7 (495) 40-777-55
+	.header__bottom
+		.container
+			.header__inner.flex.flex_vertical.flex_justify
+				.logo.header__logo
+					a(href="#").logo__link
+						img(src="/img/logo.png" alt="Логотип Pravio").logo__image
+				nav.header__nav
+					ul.menu.header__menu.flex.flex_vertical
+						li.menu__item
+							a(href="#").menu__link Компания
+						li.menu__item
+							a(href="#").menu__link Вопросы
+						li.menu__item
+							a(href="#").menu__link Юристы
+						li.menu__item
+							a(href="#").menu__link Разделы
+								+icon('arrow')
+							.menu__dropdown.flex
+								ul.menu__dropdown-list
+									li.menu__dropdown-item
+										a(href="#").menu__dropdown-link.icon-info
+											span Категории права
+									li.menu__dropdown-item
+										a(href="#").menu__dropdown-link.icon-law
+											span Темы права
+									li.menu__dropdown-item
+										a(href="#").menu__dropdown-link.icon-law-book
+											span Юридические услуги
+								ul.menu__dropdown-list
+									li.menu__dropdown-item
+										a(href="#").menu__dropdown-link.icon-question
+											span Все вопросы
+									li.menu__dropdown-item
+										a(href="#").menu__dropdown-link.icon-paid-questions
+											span Платные вопросы
+									li.menu__dropdown-item
+										a(href="#").menu__dropdown-link.icon-free
+											span Бесплатные вопросы
+								ul.menu__dropdown-list
+									li.menu__dropdown-item
+										a(href="#").menu__dropdown-link.icon-publications
+											span Публикации
+									li.menu__dropdown-item
+										a(href="#").menu__dropdown-link.icon-company
+											span Гос. учреждения
+									li.menu__dropdown-item
+										a(href="#").menu__dropdown-link.icon-document
+											span Образцы документов
+									li.menu__dropdown-item
+										a(href="#").menu__dropdown-link.icon-checked
+											span Проверка контрагента
+									li.menu__dropdown-item
+										a(href="#").menu__dropdown-link.icon-courthouse
+											span Юридические компании
+				.header__bottom-cell.flex.flex_vertical.flex_right
+					form(action="#" data-da="header__cell_right, last, 580").search.header__search.flex.flex_vertical
+						.js-mobile-toggle
+							button(type="submit" aria-label="Кнопака для поиска").search__btn
+								+icon('search')
+						input(type="text" name="search" placeholder="Введите фразу для поиска...").search__input
+					a(href="#" data-da="header__top-inner, first, 580").btn.btn_icon.btn_white.header__btn
+						+icon('question')
+						| Задать вопрос
+				button.hamburger.js-btn-menu
+					span.hamburger__lines
