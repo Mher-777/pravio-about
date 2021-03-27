@@ -1,0 +1,90 @@
+.statistics {
+  &__items {
+    margin-top: 7rem;
+    margin-bottom: -1rem;
+    @include small-tablet {
+      margin-top: 6rem;
+    }
+    @include large-mobile {
+      margin-top: 5rem;
+      display: block;
+    }
+  }
+  &__item {
+    min-width: 25%;
+    flex: 0 1 auto;
+    text-align: center;
+    color: var(--color-bg);
+    margin-bottom: 5rem;
+    @include small-tablet {
+      min-width: 50%;
+    }
+    @include large-mobile {
+      min-width: auto;
+      width: 100%;
+    }
+  }
+  &__count {
+    font-family: 'Mont', Arial, sans-serif;
+    font-size: 7.2rem;
+    display: block;
+    line-height: 0.74em;
+    position: relative;
+    z-index: 1;
+    font-weight: 900;
+    &::before {
+      content: attr(data-count);
+      font-size: 11rem;
+      color: rgba(23, 186, 155, 0.23);
+      position: absolute;
+      top: -3.5rem;
+      left: 50%;
+      margin-right: -50%;
+      transform: translateX(-50%);
+      z-index: -1;
+      line-height: 1em;
+    }
+    @include small-tablet {
+      font-size: 6rem;
+      &::before {
+        font-size: 9rem;
+        top: -2.2rem;
+      }
+    }
+    @include small-mobile {
+      font-size: 4.8rem;
+      line-height: 1em;
+      &::before {
+        top: -1.6rem;
+        font-size: 8rem;
+      }
+    }
+  }
+
+  &__subtitle {
+    font-weight: 400;
+    margin-top: 1rem;
+    max-width: 22.5rem;
+    display: inline-block;
+    @include large-mobile {
+      font-size: 1.8rem;
+      max-width: 25rem;
+    }
+    @include small-mobile {
+      font-size: 1.6rem;
+      margin-top: 0;
+    }
+    @include min-mobile {
+      font-size: 1.4rem;
+    }
+  }
+  &__btn {
+    display: block;
+    max-width: fit-content;
+    margin:0 auto;
+    min-width: 27.2rem;
+    @include small-mobile {
+      min-width: 21rem;
+    }
+  }
+}

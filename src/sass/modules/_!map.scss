@@ -1,0 +1,46 @@
+.map {
+  padding-top: 5.5rem;
+  padding-bottom: 7.5rem;
+  overflow: hidden;
+  @include large-mobile {
+    padding-bottom: 5rem;
+  }
+  @include small-mobile {
+    padding-top: 4rem;
+  }
+  &__wrap {
+    position: relative;
+    padding-bottom: 6rem;
+    @include small-tablet {
+      padding-bottom: 3rem;
+    }
+    @include large-mobile {
+      padding-bottom: 0;
+    }
+  }
+  &__bg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin-right: -50%;
+    width: 815 / 1140 * 100%;
+    padding-top: 435 / 1140 * 100%;
+    z-index: -1;
+    @include small-tablet {
+      width: 815 / 793 * 100%;
+      padding-top: 435 / 793 * 100%;
+    }
+    @include large-mobile {
+      width: calc(100% + 4rem);
+    }
+    &-image {
+      will-change: opacity;
+
+    }
+  }
+  &__top {
+    max-width: 66.5rem;
+    margin: 0 auto;
+  }
+}

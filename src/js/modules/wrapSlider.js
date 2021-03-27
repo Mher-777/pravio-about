@@ -18,7 +18,6 @@ var wrapSlider = {
 
         $(window).on("load resize", () => {
             let windowWidth = $(window).outerWidth();
-            console.log(windowWidth)
             if (windowWidth <= resolution) {
                 sliders.build(selector);
             } else {
