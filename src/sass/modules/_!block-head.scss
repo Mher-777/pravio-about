@@ -1,0 +1,68 @@
+.block-head {
+  max-width: 128rem;
+  background: linear-gradient(180deg, #17BA9B 0%, #40C7AD 47.61%, #17BA9B 100%);
+  box-shadow: 0 0 1.5rem #C4C4C4;
+  border-radius: 1rem;
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+  @media only screen and (max-width: 1320px)  {
+    margin: 0 3rem;
+  }
+  @include small-tablet {
+    margin: 0 2.5rem;
+  }
+  @include large-mobile {
+    margin: 0 2rem;
+  }
+  &__decor {
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 254 / 1280 * 100%;
+    img {
+      width: 100%;
+    }
+    &_left {
+      left: 0;
+      bottom: 0;
+    }
+    &_right {
+      right: 0;
+      top: 0;
+    }
+  }
+  &__content {
+    padding: 3.5rem 2rem;
+    text-align: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    @include small-mobile {
+      padding: 2rem 1rem;
+    }
+    @include min-mobile {
+      padding: 1.5rem .5rem 2rem;
+    }
+    p {
+      font-size: 2rem;
+      margin-top: 1.5rem;
+      @include large-mobile {
+        font-size: 1.6rem;
+      }
+      @include small-mobile {
+        font-size: 1.4rem;
+      }
+      @include min-mobile {
+        font-size: 1.2rem;
+      }
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin-bottom: 1.5rem;
+    }
+  }
+}

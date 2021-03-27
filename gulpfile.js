@@ -31,6 +31,8 @@ gulp.task("browserSync", (cb) => {
 		{
 			server: "dist",
 			notify: false,
+			online: true,
+			tunnel: true,
 		},
 		cb
 	);

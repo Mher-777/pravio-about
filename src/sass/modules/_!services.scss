@@ -1,0 +1,62 @@
+.services {
+  padding: 3.5rem 0;
+  .owl-carousel {
+    @include large-mobile {
+      .owl-stage-outer {
+        padding: 0 1.5rem;
+        margin: 0 -1.5rem;
+      }
+    }
+
+  }
+  &__slider {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -3rem;
+    @include small-tablet {
+      margin-left: -1rem;
+    }
+    @include large-mobile {
+      display: block;
+      margin: 0;
+    }
+  }
+  &__slide {
+    background: var(--color-white);
+    box-shadow: 0 0 1rem rgba(160, 160, 160, 0.5);
+    border-radius: 1rem;
+    padding: 2.5rem 3rem 3rem;
+    color: var(--color-bg);
+    margin: 3rem 0 0 3rem;
+    width: calc(25% - 3rem);
+    @include small-tablet {
+      width: calc(50% - 1rem);
+      margin: 1rem 0 0 1rem;
+    }
+    @include large-mobile {
+      margin: 1.5rem 0;
+      width: 100%;
+      padding-left: 4rem;
+      padding-right: 4rem;
+    }
+
+    &-title {
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 1.6rem;
+      line-height: 1.375em;
+      margin-bottom: 1.5rem;
+      @include large-mobile {
+        margin-bottom: 2.5rem;
+      }
+    }
+    &-btn {
+      width: 100%;
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+      margin-top: auto;
+      white-space: normal;
+    }
+  }
+}

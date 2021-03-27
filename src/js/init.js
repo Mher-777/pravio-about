@@ -1,6 +1,8 @@
 import { defaults } from "./modules/defaults";
 import { forms } from "./modules/forms";
 import { modals } from "./modules/modals";
+import { sliders } from "./modules/sliders";
+import { wrapSlider } from "./modules/wrapSlider";
 import { responsive } from "./modules/responsive";
 import svg4everybody from 'svg4everybody/dist/svg4everybody.legacy.js';
 import { config } from "./config";
@@ -10,9 +12,11 @@ var App = () => {};
 App.prototype.init = () => {
 
 	defaults.init();
+	responsive.init();
 	forms.init();
 	modals.init();
-	responsive.init();
+	sliders.init();
+	wrapSlider.init();
 	svg4everybody()
 
 	

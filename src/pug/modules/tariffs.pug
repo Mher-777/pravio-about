@@ -1,0 +1,70 @@
+section.tariffs(style="background-image: url('/app/img/tariffs-bg.jpg')")
+	.block-head.tariffs__head
+		.block-head__decor.block-head__decor_left
+			img(src="/img/block-decor-1.png" alt="Декоратия для Pravio").object-fit
+		.block-head__content.content
+			h3 Что вы получаете, обращаясь в “Правио”?
+			p Грамотную, недорогую первичную юридическую консультацию и конкретные шаги по решению проблемы
+		.block-head__decor.block-head__decor_right
+			img(src="/img/block-decor-2.png" alt="Декоратия для Pravio").object-fit
+	.container
+		.tariffs__content.content
+			h2.tariffs__title Консультация всем по карману
+			p.tariffs__text Благодаря отсутствию издержек на офисы и переход работы в онлайн нам удалось снизить стоимость консультаций одновременно с этим повысив качество услуг.
+		.tariffs__wrap
+			.tariffs__slider.flex.js-wrapSlider(
+				data-resolution="860"
+				data-settings="{" +
+						"\"items\": 2, " +
+						"\"margin\": 15, " +
+						"\"loop\": false, " +
+						"\"dots\": true, " +
+						"\"dotsClass\": \"owl-dots owl-dots_white\"," +
+						"\"responsive\": { \"0\": {\"items\": 1, \"loop\": true }, \"581\": {\"items\": 2, \"loop\": true } } " +
+					"}"
+				)
+				.tariffs__slide.tariffs__slide_orange.flex.flex_column
+					.tariffs__slide-top.flex.flex_vertical.flex_center
+						h3.h3.tariffs__slide-title VIP
+					.tariffs__slide-content
+						ul.tariffs__slide-list
+							li.tariffs__slide-item
+								+icon('fast')
+								span Моментальная публикация
+							li.tariffs__slide-item
+								+icon('warningBubble')
+								span Обязательный ответ юриста
+							li.tariffs__slide-item
+								+icon('messages')
+								span Самый полный ответ
+					.tariffs__slide-bottom
+						span.tariffs__slide-price(data-value="/ руб") 250
+						a(href="#").btn.btn_border-orange.tariffs__slide-btn Выбрать
+				.tariffs__slide.flex.flex_column
+					.tariffs__slide-top.flex.flex_vertical.flex_center
+						h3.h3.tariffs__slide-title ПЛАТНЫЙ
+					.tariffs__slide-content
+						ul.tariffs__slide-list
+							li.tariffs__slide-item
+								+icon('fast')
+								span Моментальная публикация
+							li.tariffs__slide-item
+								+icon('warningBubble')
+								span Обязательный ответ юриста
+					.tariffs__slide-bottom
+						span.tariffs__slide-price(data-value="/ руб") 100
+						a(href="#").btn.btn_border-orange.tariffs__slide-btn Выбрать
+				.tariffs__slide.flex.flex_column
+					.tariffs__slide-top.flex.flex_vertical.flex_center
+						h3.h3.tariffs__slide-title БЕСПЛАТНЫЙ
+					.tariffs__slide-content
+						ul.tariffs__slide-list
+							li.tariffs__slide-item
+								+icon('hourglass')
+								span Публикация в порядке очереди
+							li.tariffs__slide-item
+								+icon('questionBubble')
+								span Гарантии ответа нет
+					.tariffs__slide-bottom
+						span.tariffs__slide-price(data-value="/ руб") 0
+						a(href="#").btn.btn_border-orange.tariffs__slide-btn Выбрать

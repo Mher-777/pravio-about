@@ -54,48 +54,48 @@
 // min-screeen
 
 @mixin min-hd() {
-  @media only screen and (min-width: 1920px) {
+  @media only screen and (min-width: 1921px) {
     @content;
   }
 }
 
 @mixin min-mackbook() {
-  @media only screen and (min-width: 1700px) {
+  @media only screen and (min-width: 1701px) {
     @content;
   }
 }
 
 @mixin min-large-desktop() {
-  @media only screen and (min-width: 1440px) {
+  @media only screen and (min-width: 1441px) {
     @content;
   }
 }
 
 @mixin min-small-desktop() {
-  @media only screen and (min-width: 1280px) {
+  @media only screen and (min-width: 1281px) {
     @content;
   }
 }
 
 @mixin min-large-tablet() {
-  @media only screen and (min-width: 1120px) {
+  @media only screen and (min-width: 1121px) {
     @content;
   }
 }
 @mixin min-small-tablet() {
-  @media only screen and (min-width: 860px) {
+  @media only screen and (min-width: 861px) {
     @content;
   }
 }
 
 @mixin min-large-mobile() {
-  @media only screen and (min-width: 580px) {
+  @media only screen and (min-width: 581px) {
     @content;
   }
 }
 
 @mixin min-small-mobile() {
-  @media only screen and (min-width: 420px) {
+  @media only screen and (min-width: 421px) {
     @content;
   }
 }

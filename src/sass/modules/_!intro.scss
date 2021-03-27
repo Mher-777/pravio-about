@@ -1,4 +1,6 @@
 .intro {
+  position: relative;
+  overflow: hidden;
   &__bg {
     position: absolute;
     top: 0;
@@ -27,6 +29,7 @@
     text-align: center;
     p {
       font-weight: 600;
+      font-family: 'Open Sans', Arial, sans-serif;
     }
   }
   &__title {
@@ -66,14 +69,15 @@
     }
   }
   &__outer {
-    min-height: calc(100vh - 10.2rem);
-    padding: 5rem 0;
+    min-height: calc(100vh - 10rem);
+    padding: 5rem 0 10rem;
     display: table;
     max-width: 76.5rem;
     width: 100%;
     margin: 0 auto;
     @include small-tablet {
       min-height: calc(100vh - 32.6rem);
+      padding: 8rem 0 10rem;
     }
     @include large-mobile {
       max-width: 36.5rem;
@@ -101,39 +105,5 @@
       margin-right: 0;
     }
   }
-  &__row {
-    margin-left: -3rem;
-    margin-top: -8rem;
-    transform: translateY(8rem);
-  }
-  &__col {
-    width: calc(33.33333333% - 3rem);
-    margin-left: 3rem;
-    background-color: var(--color-white);
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
-    border-radius: 1rem;
-    padding: 2rem 3.5rem;
-    .icon {
-      flex-shrink: 0;
-      margin-right: 2rem;
-      fill: var(--color-green);
-      margin-top: 2rem;
-    }
-  }
-  &__info {
-    width: 240 / 290 * 100%;
-    color: var(--color-gray);
-    &-subtitle {
-      font-size: 1.6rem;
-      color: var(--color-green);
-      display: block;
-      margin-bottom: .7rem;
-      font-weight: 700;
-    }
-    p {
-      margin-bottom: 1rem;
-      font-size: 1.4rem;
-      line-height: 1.357em;
-    }
-  }
+
 }

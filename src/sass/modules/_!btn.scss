@@ -40,6 +40,22 @@
   &_border-orange {
     background-color: transparent;
     border-color: var(--color-orange);
+    color: var(--color-orange);
+    &:hover {
+      border-color: transparent;
+      background-color: var(--color-orange);
+      color: var(--color-white);
+    }
+  }
+  &_border-green {
+    background-color: transparent;
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+    &:hover {
+      border-color: transparent;
+      background-color: var(--color-accent-hover);
+      color: var(--color-white);
+    }
   }
   &_medium {
     padding: 1.8rem 3rem;
@@ -48,6 +64,7 @@
       white-space: normal;
     }
   }
+
   &_radius {
     border-radius: 1rem;
   }
@@ -80,6 +97,13 @@
         width: 1.4rem;
         height: 1.4rem;
       }
+    }
+  }
+  &_small {
+    font-size: 1.4rem;
+    padding: 1rem;
+    @include min-mobile {
+      padding: 1rem .9rem;
     }
   }
 }

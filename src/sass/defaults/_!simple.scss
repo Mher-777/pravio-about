@@ -134,12 +134,19 @@ a {
 	&_start {
 		align-items: flex-start;
 	}
+
 	&_bottom {
 		align-items: flex-end;
 	}
 
 	&_vertical {
 		align-items: center;
+	}
+
+	&_column {
+		@supports (flex-direction: column) {
+			flex-direction: column;
+		}
 	}
 }
 

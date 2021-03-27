@@ -71,6 +71,7 @@
       padding: 0 2rem 0 9rem;
       background-color: var(--color-accent);
       display: none;
+
     }
     @include small-mobile {
       padding: 0 2rem 0 7rem;
@@ -121,6 +122,9 @@
   }
 }
 .logo {
+  &__link {
+    display: block;
+  }
   &__image {
     display: block;
   }

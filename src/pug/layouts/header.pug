@@ -31,13 +31,14 @@ header.header
 						img(src="/img/logo.png" alt="Логотип Pravio").logo__image
 				nav.header__nav
 					ul.menu.header__menu.flex.flex_vertical
+						//li.menu__item.is-active для текущей сраницы добавить калсс is-active
 						li.menu__item
 							a(href="#").menu__link Компания
 						li.menu__item
 							a(href="#").menu__link Вопросы
 						li.menu__item
 							a(href="#").menu__link Юристы
-						li.menu__item
+						li.menu__item.menu__item_dropdown
 							a(href="#").menu__link Разделы
 								+icon('arrow')
 							.menu__dropdown.flex
