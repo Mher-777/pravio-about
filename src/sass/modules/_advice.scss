@@ -1,7 +1,10 @@
 .advice {
   position: relative;
   z-index: 1;
-
+  margin-bottom: 7.5rem;
+  @include small-tablet {
+    margin-bottom: 0;
+  }
   &__bg {
     position: absolute;
     top: 0;
@@ -132,6 +135,9 @@
     @include small-tablet {
       display: block;
       padding: 5rem 0;
+    }
+    @include large-mobile {
+      padding: 5rem 0 1.5rem;
     }
   }
 }

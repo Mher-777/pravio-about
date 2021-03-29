@@ -92,3 +92,21 @@ textarea,
 .owl-counter {
   display: none;
 }
+.owl-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .owl-prev,
+  .owl-next{
+    stroke: #CACACA;
+    margin: 0 .75rem;
+    transition: all linear .2s;
+    &:hover {
+      stroke: var(--color-accent);
+    }
+    &:focus {
+      outline: none;
+      stroke: var(--color-accent);
+    }
+  }
+}

@@ -21,6 +21,9 @@
 	@include large-mobile{
 		padding: 0 2rem;
 	}
+	&_medium {
+		max-width: 162rem;
+	}
 }
 
 html {

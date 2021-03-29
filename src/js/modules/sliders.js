@@ -10,12 +10,14 @@ var sliders = {
         dots: false,
         loop: false,
         autoplay: false,
+        autoplayTimeout:2500,
+        autoplayHoverPause:true,
         smartSpeed: 600,
         margin: 20,
         responsiveRefreshRate: 50,
         navText: [
-            '<svg class="icon icon-longArrowLeft" viewBox="0 0 25 16"><use xlink:href="/app/icons/sprite.svg#longArrow"></use></svg>',
-            '<svg class="icon icon-longArrowLeft" viewBox="0 0 25 16"><use xlink:href="/app/icons/sprite.svg#longArrow"></use></svg></span>',
+            '<svg class="icon icon-arrowLeft" viewBox="0 0 25 16"><use xlink:href="/app/icons/sprite.svg#arrowLeft"></use></svg>',
+            '<svg class="icon icon-arrowRight" viewBox="0 0 25 16"><use xlink:href="/app/icons/sprite.svg#arrowRight"></use></svg></span>',
         ],
     },
 
