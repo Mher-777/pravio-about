@@ -12,6 +12,9 @@
   @include large-mobile {
     font-size: 1.4rem;
   }
+  @include small-mobile {
+    white-space: normal;
+  }
   &_white {
     background-color: var(--color-white);
     color: var(--color-accent);
@@ -61,7 +64,6 @@
     padding: 1.8rem 3rem;
     @include small-mobile {
       padding: 1.5rem;
-      white-space: normal;
     }
   }
 

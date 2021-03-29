@@ -1,0 +1,35 @@
+section.advice
+	.advice__bg
+		.advice__bg-image
+			img(src="/img/form-bg.jpg" alt="Консультация юриста онлайн").object-fit
+	.container
+		.advice__decor
+			img(src="/img/block-decor-3.png").object-fit
+		.advice__inner.flex
+			.advice__cell.advice__cell_left
+				.section-top.content.section-top_left
+					h2.section-top__title Консультация юриста онлайн
+					p.section-top__text Задайте вопрос прямо сейчас, и его увидят сотни профессионалов со всей России. Первый ответ вы получите уже через 15&nbsp;минут! Юридическая помощь предоставляется на бесплатной и платной основе
+				ul.advice__items(data-da="advice__inner, last, 580")
+					li.advice__item
+						+icon('clock')
+						span ответ в течении 15 минут
+					li.advice__item
+						+icon('phone')
+						span 89 консультаций сегодня
+					li.advice__item
+						+icon('user')
+						span 98% довольных клиентов
+			.advice__cell.advice__cell_right
+				form(action="#").advice-form
+					.advice-form__top
+						.advice-form__avatar
+							img(src="/img/avatar.png" alt="Алексей Романов юрист-консультант")
+						.advice-form__content.content
+							p Получите консультацию нашего юриста в течение 15 минут
+							p Алексей Романов <span>юрист-консультант</span>
+					.advice-form__main
+						textarea(name="question" placeholder="Введите ваш вопрос здесь...").textarea-filed.advice-form__textarea
+						blockquote.advice-form__blockquote Гарантируем конфиденциальность ваших персональных данных!
+					.advice-form__bottom
+						button(type="submit").btn.btn_border-orange.btn_radius.advice-form__btn Задать вопрос

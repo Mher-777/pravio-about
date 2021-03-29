@@ -30,6 +30,12 @@ textarea,
   @include large-mobile {
     margin-bottom: 2.5rem;
   }
+  &_left {
+    text-align: left;
+    @include large-mobile {
+      text-align: center;
+    }
+  }
   &_gray {
     color: var(--color-gray);
     h2{

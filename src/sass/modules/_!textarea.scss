@@ -1,0 +1,30 @@
+.textarea-filed {
+  display: block;
+  width: 100%;
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 1px solid var(--color-accent);
+  height: 25rem;
+  color: var(--color-bg);
+  resize: none;
+  font-size: 1.4rem;
+  &.is-error {
+    border-color: var(--color-red);
+    @include placeholder {
+      color: var(--color-red);
+    }
+  }
+  @include large-mobile {
+    padding: 1.7rem;
+  }
+  @include small-mobile {
+    font-size: 1.2rem;
+  }
+  @include placeholder {
+    color: var(--color-accent);
+    font-size: 1.4rem;
+    @include small-mobile {
+      font-size: 1.2rem;
+    }
+  }
+}

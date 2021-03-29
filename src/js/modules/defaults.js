@@ -42,14 +42,14 @@ var defaults = {
                 function open() {
                     $(this).toggleClass('is-active')
                     menu.slideToggle()
-                    config.container.toggleClass('js-lock menu-open')
+                    config.container.toggleClass('menu-open')
                 }
                 open()
             })
             function close() {
                 btn.removeClass('is-active')
                 menu.removeAttr('style')
-                config.container.removeClass('js-lock menu-open')
+                config.container.removeClass('menu-open')
             }
             $(window).resize(function () {
                 close()

@@ -52,6 +52,9 @@ var forms = {
 					search: {
 						required: true,
 					},
+					question: {
+						required: true,
+					}
 				},
 			});
 		});

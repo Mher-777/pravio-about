@@ -1,0 +1,250 @@
+.advice {
+  position: relative;
+  z-index: 1;
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(23, 186, 155, 0.95);
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+
+    &-image {
+      height: 100%;
+      width: 100%;
+      will-change: opacity;
+    }
+  }
+
+  &__decor {
+    position: absolute;
+    z-index: -1;
+    width: 330 / 1200 * 100%;
+    padding-top: 240 / 1200 * 100%;
+    top: -60 / 504 * 100%;
+    right: -210 / 1200 * 100%;
+    @include mackbook {
+      right: -110 / 1200 * 100%;
+    }
+    @include large-desktop {
+      right: 0;
+    }
+    @include small-tablet {
+      display: none;
+    }
+  }
+
+  &__list {
+    max-width: 33rem;
+    margin-top: 8rem;
+  }
+
+  &__item {
+    margin-bottom: 3.5rem;
+    font-weight: 600;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: flex-start;
+
+    .icon {
+      width: 3rem;
+      height: 3rem;
+      flex-shrink: 0;
+      margin-right: 2rem;
+      fill: var(--color-white)
+    }
+
+    span {
+      margin-top: .4rem;
+    }
+    @include large-mobile {
+      margin-top: 1.5rem;
+      display: block;
+      text-align: center;
+      width: calc(33.3333333% - .5em);
+      margin-left: .5rem;
+      font-size: 1.35rem;
+      span {
+        display: block;
+      }
+      .icon {
+        margin-right: 0;
+      }
+    }
+    @include small-mobile {
+      font-size: 1.1rem;
+      .icon {
+        height: 2.5rem;
+        width: 2.5rem;
+      }
+    }
+    @include min-mobile {
+      font-size: 1rem;
+    }
+  }
+
+  &__items {
+    @include large-mobile {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: -.5rem;
+    }
+  }
+
+  &__cell {
+
+    &_left {
+      width: 580 / 1140 * 100%;
+      padding: 5.5rem 0;
+      margin-right: 20 / 1140 * 100%;
+      @include small-tablet {
+        padding: 0;
+      }
+    }
+
+    &_right {
+      width: 540 / 1140 * 100%;
+      margin-top: -5.5rem;
+      margin-bottom: -7.5rem;
+    }
+
+    @include small-tablet {
+      max-width: 58rem;
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+
+  &__inner {
+    @include small-tablet {
+      display: block;
+      padding: 5rem 0;
+    }
+  }
+}
+
+.advice-form {
+  box-shadow: 0px 0px 1rem rgba(0, 0, 0, 0.25);
+  background-color: var(--color-white);
+  border-radius: 1rem;
+  padding: 4.5rem 5rem 5rem;
+  height: 100%;
+  color: var(--color-bg);
+  @include small-tablet {
+    height: auto;
+  }
+  @include large-mobile {
+    padding: 3rem;
+  }
+  @include small-mobile {
+    padding: 2rem;
+  }
+  @include min-mobile {
+    padding: 2rem 1.7rem;
+  }
+
+  &__avatar {
+    min-width: 7.5rem;
+    height: 7.5rem;
+    margin-right: 5 / 440 *100%;
+    @include small-tablet {
+      margin-top: -.7rem;
+    }
+    @include large-mobile {
+      min-width: 6.5rem;
+      height: 6.5rem;
+    }
+  }
+
+  &__top {
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: flex-start;
+    @include large-mobile {
+      margin-bottom: 2rem;
+    }
+    @include small-mobile {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__content {
+    color: var(--color-accent);
+    width: 350 / 440 *100%;
+
+    p {
+      font-weight: 700;
+      margin-bottom: .5rem;
+
+      span {
+        font-weight: 400;
+      }
+      &:last-child {
+        @include small-mobile {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  &__blockquote {
+    font-size: 1.2rem;
+    line-height: 1.3em;
+    margin-top: 1.2rem;
+    @include large-mobile {
+      font-size: 1rem;
+      margin-top: 1rem;
+    }
+    @include min-mobile {
+      font-size: .8rem;
+    }
+  }
+
+  &__btn {
+    font-size: 1.8rem;
+    min-width: 21.5rem;
+    @include large-mobile {
+      font-size: 1.6rem;
+      min-width: 18.5rem;
+    }
+    @include small-mobile {
+      font-size: 1.4rem;
+      min-width: 16.5rem;
+    }
+  }
+
+  &__bottom {
+    margin-top: 3.5rem;
+    text-align: center;
+    @include large-mobile {
+      margin-top: 1.5rem;
+    }
+    @include small-mobile {
+      margin-top: 1rem;
+    }
+  }
+
+  &__textarea {
+    height: 31rem;
+    @include large-mobile {
+      height: 20rem;
+    }
+    @include small-mobile {
+      height: 17rem;
+    }
+  }
+
+}
