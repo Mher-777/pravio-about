@@ -11,7 +11,7 @@ var forms = {
 			var $form = $(el);
 			$form.validate({
 				errorPlacement: function (error, element) {
-					//just nothing, empty
+					error.insertAfter(element);
 				},
 				highlight: (element, errorClass, validClass) => {
 					$(element)
@@ -39,6 +39,7 @@ var forms = {
 				},
 				submitHandler: (form) => {
 					var data = $(form).serialize();
+					console.log(data)
 					$.ajax({
 						type: "POST",
 						url: $(form).attr("action"),
@@ -54,8 +55,42 @@ var forms = {
 					},
 					question: {
 						required: true,
-					}
+					},
+					name: {
+						required: true,
+					},
+					email: {
+						required: true,
+						email: true
+					},
+					password: {
+						required: true,
+						minlength : 6
+					},
+					cfmPassword: {
+						required: true,
+						minlength : 6,
+						equalTo : ".js-repeat1, .js-repeat2"
+					},
 				},
+				messages: {
+					name: {
+						required: 'Это поле обязательно для заполнения'
+					},
+					email: {
+						required: 'Это поле обязательно для заполнения',
+						email: 'Введите валидный email адрес'
+					},
+					password: {
+						required: 'Это поле обязательно для заполнения',
+						minlength: 'Пароль должен быть минимум 6 символов'
+					},
+					cfmPassword: {
+						required: 'Это поле обязательно для заполнения',
+						minlength: 'Пожалуйста, введите не менее 6 символов.',
+						equalTo: 'Пожалуйста, введите одинаковый пароль',
+					},
+				}
 			});
 		});
 	},

@@ -3,6 +3,7 @@ import { forms } from "./modules/forms";
 import { modals } from "./modules/modals";
 import { sliders } from "./modules/sliders";
 import { wrapSlider } from "./modules/wrapSlider";
+import { select } from "./modules/select";
 import { responsive } from "./modules/responsive";
 import svg4everybody from 'svg4everybody/dist/svg4everybody.legacy.js';
 import { config } from "./config";
@@ -17,6 +18,7 @@ App.prototype.init = () => {
 	modals.init();
 	sliders.init();
 	wrapSlider.init();
+	select.init();
 	svg4everybody()
 
 	

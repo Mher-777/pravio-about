@@ -92,6 +92,7 @@ var defaults = {
 
                 });
         }
+
         scrollCounter('.statistics', '.statistics__count')
 
         toggleSlide('.js-mobile-toggle')

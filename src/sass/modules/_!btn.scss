@@ -39,6 +39,12 @@
       background-color: var(--color-accent-hover);
       box-shadow: 0 0 1rem var(--color-accent-hover);
     }
+    &.is-active {
+      border-color: transparent;
+      background-color: var(--color-white);
+      box-shadow: none;
+      color: var(--color-accent);
+    }
   }
   &_border-orange {
     background-color: transparent;
@@ -67,9 +73,6 @@
     }
   }
 
-  &_radius {
-    border-radius: 1rem;
-  }
   &_icon {
     display: inline-flex;
     align-items: center;
@@ -107,5 +110,8 @@
     @include min-mobile {
       padding: 1rem .9rem;
     }
+  }
+  &_radius {
+    border-radius: 1rem;
   }
 }

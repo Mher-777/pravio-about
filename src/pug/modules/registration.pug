@@ -1,0 +1,58 @@
+section.registration
+	.registration__bg
+		.registration__bg-image
+			img(src="/img/form-bg.jpg" alt="Регистрация на “Prav.io”").object-fit
+	.container
+		.registration__wrap
+			.registration__top.flex.flex_justify.flex_vertical
+				h2.h2.registration__title Регистрация на “Prav.io”
+				.registration__group.flex.flex_right
+					a(href="#").btn.btn_border-white.registration__top-btn Пользователь
+					a(href="#").btn.btn_border-white.btn_current.registration__top-btn.is-active Юрист
+			.registration__box
+				.registration__image
+					img(src="/img/registration-image.png" alt="")
+				.registration__inner.flex.flex_justify
+					form(action="#").registration__form
+						.field
+							select(name="role").field__select.js-select
+								option(value="1") Пользователь
+								option(value="2") Юрист
+								option(value="3") Нотариус
+								option(value="4") Адвокат
+						.field
+							input(type="text" placeholder="Имя" name="name").field__input
+						.field
+							input(type="email" placeholder="Email (введите реальный email)" name="email").field__input
+						.field
+							input(type="password" placeholder="Пароль" name="password" id="password").field__input
+						.field
+							input(type="password" placeholder="Подтверждение пароля" name="cfmPassword").field__input
+						.registration__form-text Нажимая кнопку «Зарегистрироваться», я принимаю условия <a href="#" class="color-green">Пользовательского соглашения</a> и условия <a href="#" class="color-green">Политики конфиденциальности</a>
+						.registration__form-bottom
+							button(type="submit").btn.btn_radius.btn_green.registration__btn Зарегистрироваться
+							span.registration__login Есть аккаунт?&#32;
+								a(href="#").registration__link.color-green Войти
+					.registration__content
+						h4.h4.registration__subtitle.color-green Регистрация юриста
+						ul.registration__list
+							li.registration__item
+								+icon('website')
+								.registration__info
+									span.registration__info-title.color-green Регистрируйтесь на сайте
+									p.registration__info-text Зарегистрируйтесь на проекте в качестве юриста
+							li.registration__item
+								+icon('user')
+								.registration__info
+									span.registration__info-title.color-green Заполните профиль
+									p.registration__info-text Чем полнее заполнен профиль, тем выше доверие клиентов
+							li.registration__item
+								+icon('question')
+								.registration__info
+									span.registration__info-title.color-green Отвечайте на вопросы
+									p.registration__info-text Помогайте клиентам в решении вопросов, оформлении документов и оказывая устные консультации
+							li.registration__item
+								+icon('dollar')
+								.registration__info
+									span.registration__info-title.color-green Отвечайте на вопросы
+									p.registration__info-text Помогайте клиентам в решении вопросов, оформлении документов и оказывая устные консультации

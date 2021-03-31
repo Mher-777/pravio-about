@@ -1,0 +1,215 @@
+.registration {
+  position: relative;
+  padding-top: 5rem;
+  padding-bottom: 7rem;
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(23, 186, 155, 0.9);
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+    &-image {
+      height: 100%;
+      width: 100%;
+      will-change: opacity;
+    }
+  }
+  &__wrap {
+    max-width: 945px;
+    margin: 0 auto;
+  }
+  &__top {
+    margin-bottom: 3rem;
+    &-btn {
+      min-width: 16.5rem;
+      margin: 0 .4rem;
+      @include large-mobile {
+        width: calc(50% - 2rem);
+        min-width: auto;
+        margin: 0 1rem;
+      }
+      @include large-mobile {
+        margin-top: 2rem;
+      }
+      @include small-mobile {
+        padding: 1.3rem;
+      }
+    }
+    @include large-mobile {
+      display: block;
+    }
+
+  }
+  &__group {
+    width: 400 / 945 * 100%;
+    @include small-tablet {
+      width: 360 / 810 * 100%;
+    }
+    @include large-mobile {
+      width: calc(100% + 2rem);
+      margin: 0 -1rem;
+    }
+  }
+  &__title {
+    width: 540 / 945 * 100%;
+    @include small-tablet {
+      width: 450 / 810 * 100%;
+    }
+    @include large-mobile {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  &__btn {
+    font-weight: 400;
+  }
+  &__image {
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    right: 0;
+    width: 510 / 945 * 100%;
+    @include large-mobile {
+      width: 100%;
+    }
+  }
+  &__box {
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 1rem rgba(#fff, .9);
+    border-radius: 1rem;
+    padding: 2.2rem 2.5rem ;
+    position: relative;
+    z-index: 1;
+    @include large-mobile {
+      background-color: var(--color-white);
+    }
+
+  }
+  &__form {
+    background-color: var(--color-white);
+    width: 410 / 895 * 100%;
+    padding: 1rem 4.2rem 1.5rem;
+    @include small-tablet {
+      padding: 1rem 2rem 1.5rem;
+      width: 380 / 760 * 100%;
+    }
+    @include large-mobile {
+      width: 100%;
+      background-color: transparent;
+      padding: 0;
+    }
+    &-text {
+      font-size: 1.2rem;
+      line-height: 1.35em;
+      color: var(--color-gray);
+      margin-top: 1rem;
+    }
+    &-bottom {
+      text-align: center;
+    }
+  }
+  &__btn {
+    margin-top: 2rem;
+    padding: 1.2rem 2rem;
+  }
+  &__login {
+    display: block;
+    font-size: 1.2rem;
+    color: var(--color-gray);
+    margin-top: 1.5rem;
+  }
+  &__inner {
+    @include large-mobile {
+      flex-direction: column-reverse;
+    }
+  }
+  &__content {
+    width: 415 / 895 * 100%;
+    padding-top: 1.5rem;
+    @include small-tablet {
+      width: 340 / 760 * 100%;
+    }
+    @include large-mobile {
+      width: 100%;
+      padding-top: 0;
+    }
+  }
+  &__subtitle {
+    margin-left: 4.5rem;
+    @include small-tablet {
+      margin-left: 4rem;
+    }
+    @include large-mobile {
+      font-size: 1.8rem;
+    }
+    @include small-mobile {
+      font-size: 1.6rem;
+    }
+  }
+  &__info {
+    margin-left: 1.5rem;
+    &-title {
+      font-weight: 700;
+      font-size: 1.6rem;
+      line-height: 1.35em;
+      margin-bottom: .3rem;
+      @include small-mobile {
+        font-size: 1.4rem;
+      }
+    }
+    &-text {
+      font-size: 1.4rem;
+      color: var(--color-gray);
+      @include small-mobile {
+        font-size: 1.2rem;
+      }
+    }
+  }
+  &__list {
+    margin-top: 3.5rem;
+    @include large-mobile {
+      margin-top: 2rem;
+    }
+    @include small-mobile {
+      margin-top: 1rem;
+    }
+    @include min-mobile {
+      margin-top: .6rem;
+    }
+  }
+  &__item {
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: flex-start;
+    @include small-mobile {
+      margin-bottom: 1rem;
+    }
+    @include min-mobile {
+      margin-bottom: .8rem;
+    }
+    .icon {
+      width: 3rem;
+      height: 3rem;
+      fill: var(--color-accent);
+      flex-shrink: 0;
+      margin-top: 1.5rem;
+      @include small-mobile {
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-top: 1rem;
+      }
+    }
+  }
+}
