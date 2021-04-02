@@ -1,6 +1,5 @@
 import { defaults } from "./modules/defaults";
 import { forms } from "./modules/forms";
-import { modals } from "./modules/modals";
 import { sliders } from "./modules/sliders";
 import { wrapSlider } from "./modules/wrapSlider";
 import { select } from "./modules/select";
@@ -15,7 +14,6 @@ App.prototype.init = () => {
 	defaults.init();
 	responsive.init();
 	forms.init();
-	modals.init();
 	sliders.init();
 	wrapSlider.init();
 	select.init();
