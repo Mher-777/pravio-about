@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <title>About</title>
+    <link rel="stylesheet" href="/app/css/app.css?v=1617378397599">
+    <script>
+        window.MSInputMethodContext && document.documentMode && document.write('<script src="https://cdn.jsdelivr.net/gh/nuxodin/ie11CustomProperties@4.1.0/ie11CustomProperties.min.js"><\\/script>');
+    </script>
+    <script>
+        function canUseWebP(){var e=document.createElement("canvas");return!(!e.getContext||!e.getContext("2d"))&&0==e.toDataURL("image/webp").indexOf("data:image/webp")}var root=document.getElementsByTagName("html")[0];canUseWebP()?root.classList.add("ws"):root.classList.add("wn");
+    </script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="header__top-inner flex flex_justify flex_vertical">
+                    <div class="header__cell header__cell_left flex flex_vertical" data-da="header__nav, first, 580"><a class="header__cell-link" href="#">Работа юристу</a>
+                        <div class="header__address address" tabindex="0"><span class="address__text">Москва</span>
+                            <div class="address__dropdown"><a class="address__link" href="#">Москва</a><a class="address__link" href="#">Краснодар</a><a class="address__link" href="#">Нижний Новгород</a><a class="address__link" href="#">Омск</a><a class="address__link" href="#">Самара</a>
+                                <a
+                                class="address__link" href="#">Санкт-Петербург</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__cell header__cell_right flex flex_vertical">
+                        <div class="authorization header__authorization">
+                            <div class="authorization__icon">
+                                <svg class="icon icon-user" viewBox="0 0 24 24">
+                                    <use xlink:href="/app/icons/sprite.svg#user"></use>
+                                </svg>
+                            </div><a class="authorization__link" href="#">Войти</a><a class="authorization__link" href="#">Регистрация</a>
+                        </div>
+                        <a class="phone header__phone" href="tel:+74954077755" data-da="header__inner, 1, 580">
+                            <svg class="icon icon-phone" viewBox="0 0 19 19">
+                                <use xlink:href="/app/icons/sprite.svg#phone"></use>
+                            </svg><span data-mobile-text="Бесплатная горячая линия">+7 (495) 40-777-55</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="container">
+                <div class="header__inner flex flex_vertical flex_justify">
+                    <div class="logo header__logo">
+                        <a class="logo__link" href="#">
+                            <picture>
+                                <source type="image/webp" srcset="/app/img/logo.webp">
+                                    <img src="/app/img/logo.png" class="logo__image" alt="Логотип Pravio" />
+                            </picture>
+                        </a>
+                    </div>
+                    <nav class="header__nav">
+                        <ul class="menu header__menu flex flex_vertical">
+                            <!--li.menu__item.is-active для текущей сраницы добавить калсс is-active-->
+                            <li class="menu__item"><a class="menu__link" href="#">Компания</a>
+                            </li>
+                            <li class="menu__item"><a class="menu__link" href="#">Вопросы</a>
+                            </li>
+                            <li class="menu__item"><a class="menu__link" href="#">Юристы</a>
+                            </li>
+                            <li class="menu__item menu__item_dropdown"><a class="menu__link" href="#">Разделы<svg class="icon icon-arrow" viewBox="0 0 12 7"><use xlink:href="/app/icons/sprite.svg#arrow"></use></svg></a>
+                                <div class="menu__dropdown flex">
+                                    <ul class="menu__dropdown-list">
+                                        <li class="menu__dropdown-item"><a class="menu__dropdown-link icon-info" href="#"><span>Категории права</span></a>
+                                        </li>
+                                        <li class="menu__dropdown-item"><a class="menu__dropdown-link icon-law" href="#"><span>Темы права</span></a>
+                                        </li>
+                                        <li class="menu__dropdown-item"><a class="menu__dropdown-link icon-law-book" href="#"><span>Юридические услуги</span></a>
+                                        </li>
+                                    </ul>
+                                    <ul class="menu__dropdown-list">
+                                        <li class="menu__dropdown-item"><a class="menu__dropdown-link icon-question" href="#"><span>Все вопросы</span></a>
+                                        </li>
+                                        <li class="menu__dropdown-item"><a class="menu__dropdown-link icon-paid-questions" href="#"><span>Платные вопросы</span></a>
+                                        </li>
+                                        <li class="menu__dropdown-item"><a class="menu__dropdown-link icon-free" href="#"><span>Бесплатные вопросы</span></a>
+                                        </li>
+                                    </ul>
+                                    <ul class="menu__dropdown-list">
+                                        <li class="menu__dropdown-item"><a class="menu__dropdown-link icon-publications" href="#"><span>Публикации</span></a>
+                                        </li>
+                                        <li class="menu__dropdown-item"><a class="menu__dropdown-link icon-company" href="#"><span>Гос. учреждения</span></a>
+                                        </li>
+                                        <li class="menu__dropdown-item"><a class="menu__dropdown-link icon-document" href="#"><span>Образцы документов</span></a>
+                                        </li>
+                                        <li class="menu__dropdown-item"><a class="menu__dropdown-link icon-checked" href="#"><span>Проверка контрагента</span></a>
+                                        </li>
+                                        <li class="menu__dropdown-item"><a class="menu__dropdown-link icon-courthouse" href="#"><span>Юридические компании</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__bottom-cell flex flex_vertical flex_right">
+                        <form class="search header__search flex flex_vertical" action="#" data-da="header__cell_right, last, 580">
+                            <div class="js-mobile-toggle">
+                                <button class="search__btn" type="submit" aria-label="Кнопака для поиска">
+                                    <svg class="icon icon-search" viewBox="0 0 28 28">
+                                        <use xlink:href="/app/icons/sprite.svg#search"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <input class="search__input" type="text" name="search" placeholder="Введите фразу для поиска...">
+                        </form>
+                        <a class="btn btn_icon btn_white header__btn" href="#" data-da="header__top-inner, first, 580">
+                            <svg class="icon icon-question" viewBox="0 0 20 20">
+                                <use xlink:href="/app/icons/sprite.svg#question"></use>
+                            </svg>Задать вопрос</a>
+                    </div>
+                    <button class="hamburger js-btn-menu"><span class="hamburger__lines"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="intro">
+            <div class="intro__bg">
+                <div class="intro__bg-image">
+                    <picture>
+                        <source type="image/webp" srcset="/app/img/intro-bg.webp">
+                            <img src="/app/img/intro-bg.jpg" class="object-fit" alt="О КОМПАНИИ “ПРАВИО”" />
+                    </picture>
+                </div>
+            </div>
+            <div class="container">
+                <div class="intro__outer">
+                    <div class="intro__middle">
+                        <div class="intro__inner">
+                            <div class="intro__content content">
+                                <h1 class="h1 intro__title" data-title="О КОМПАНИИ">О&nbsp;КОМПАНИИ “ПРАВИО”</h1>
+                                <p class="intro__text">С нами сотрудничают сотни компетентных специалистов в различных областях права из всех регионов России</p>
+                            </div>
+                            <div class="intro__cell flex flex_center"><a class="btn btn_white btn_medium btn_radius intro__btn" href="#">Заказать консультацию</a><a class="btn btn_border-white btn_medium btn_radius intro__btn" href="#">Заказать консультацию</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="info">
+            <div class="container">
+                <div class="info__items flex">
+                    <div class="info__item flex flex_start">
+                        <svg class="icon icon-clock" viewBox="0 0 28 28">
+                            <use xlink:href="/app/icons/sprite.svg#clock"></use>
+                        </svg>
+                        <div class="info__item-cell"><span class="info__subtitle">Скорость выполнения</span>
+                            <p class="info__text">Через 10-15 минут вы получите первый экспертный ответ</p>
+                        </div>
+                    </div>
+                    <div class="info__item flex flex_start">
+                        <svg class="icon icon-employee" viewBox="0 0 28 28">
+                            <use xlink:href="/app/icons/sprite.svg#employee"></use>
+                        </svg>
+                        <div class="info__item-cell"><span class="info__subtitle">Выбор исполнителей</span>
+                            <p class="info__text">В нашей компании работают
+                                <br>более 1500 исполнителей</p>
+                        </div>
+                    </div>
+                    <div class="info__item flex flex_start">
+                        <svg class="icon icon-dollar" viewBox="0 0 28 28">
+                            <use xlink:href="/app/icons/sprite.svg#dollar"></use>
+                        </svg>
+                        <div class="info__item-cell"><span class="info__subtitle">Доступная стоимость</span>
+                            <p class="info__text">Вы можете задать вопрос как на платной основе, так и бесплатно.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="services">
+            <div class="container">
+                <div class="section-top section-top_gray content">
+                    <h2 class="section-top__title">ЮРИДИЧЕСКИЕ УСЛУГИ</h2>
+                    <p class="section-top__text">Мы помогаем людям и бизнесу с решением их юридических проблем в разных направлениях – семейное право, вопросы ГИБДД, получение льгот и компенсаций, а <a href="#">также другие направления!</a>
+                    </p>
+                </div>
+                <div class="services__slider js-wrapSlider" data-resolution="580" data-settings="{&quot;items&quot;: 1, &quot;margin&quot;: 30, &quot;loop&quot;: true, &quot;autoHeight&quot;: true, &quot;dots&quot;: true}">
+                    <div class="services__slide flex flex_column flex_start">
+                        <h4 class="services__slide-title h4 color-green">Задать вопрос онлайн</h4>
+                        <p class="services__text">Задайте свой вопрос, опишите проблему и вы получите квалифицированный ответ в считанные минуты.</p><a class="btn btn_border-green btn_radius btn_small services__slide-btn" href="#">Заказать вопрос</a>
+                    </div>
+                    <div class="services__slide flex flex_column flex_start">
+                        <h4 class="services__slide-title h4 color-green">Общение с юристом в чате</h4>
+                        <p class="services__text">Переписывайтесь с юристом в режиме онлайн в удобном и функциональном чате.</p><a class="btn btn_border-green btn_radius btn_small services__slide-btn" href="#">Заказать вопрос</a>
+                    </div>
+                    <div class="services__slide flex flex_column flex_start">
+                        <h4 class="services__slide-title h4 color-green">Консультации по телефону</h4>
+                        <p class="services__text">Оставляйте заявку на консультацию по телефону и общайтесь с юристом в удобное вам время.</p><a class="btn btn_border-green btn_radius btn_small services__slide-btn" href="#">Заказать консультацию</a>
+                    </div>
+                    <div class="services__slide flex flex_column flex_start">
+                        <h4 class="services__slide-title h4 color-green">Оформление документов</h4>
+                        <p class="services__text">Закажите любой юридический документ: претензию потребителя, документы в суд, жалобы на чиновников и т.д.</p><a class="btn btn_border-green btn_radius btn_small services__slide-btn" href="#">Заказать документ</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="tariffs">
+            <div class="tariffs__bg">
+                <div class="tariffs__bg-image">
+                    <picture>
+                        <source type="image/webp" srcset="/app/img/tariffs-bg.webp">
+                            <img src="/app/img/tariffs-bg.jpg" class="object-fit" alt="Консультация юриста онлайн" />
+                    </picture>
+                </div>
+            </div>
+            <div class="block-head tariffs__head">
+                <div class="block-head__decor block-head__decor_left">
+                    <picture>
+                        <source type="image/webp" srcset="/app/img/block-decor-1.webp">
+                            <img src="/app/img/block-decor-1.png" class="object-fit" alt="Декоратия для Pravio" />
+                    </picture>
+                </div>
+                <div class="block-head__content content">
+                    <h3>Что вы получаете, обращаясь в “Правио”?</h3>
+                    <p>Грамотную, недорогую первичную юридическую консультацию и конкретные шаги по решению проблемы</p>
+                </div>
+                <div class="block-head__decor block-head__decor_right">
+                    <picture>
+                        <source type="image/webp" srcset="/app/img/block-decor-2.webp">
+                            <img src="/app/img/block-decor-2.png" class="object-fit" alt="Декоратия для Pravio" />
+                    </picture>
+                </div>
+            </div>
+            <div class="container">
+                <div class="section-top content">
+                    <h2 class="section-top__title">Консультация всем по карману</h2>
+                    <p class="section-top__text">Благодаря отсутствию издержек на офисы и переход работы в онлайн нам удалось снизить стоимость консультаций одновременно с этим повысив качество услуг.</p>
+                </div>
+                <div class="tariffs__wrap">
+                    <div class="tariffs__slider flex js-wrapSlider" data-resolution="860" data-settings="{&quot;items&quot;: 2, &quot;margin&quot;: 15, &quot;loop&quot;: false, &quot;dots&quot;: true, &quot;dotsClass&quot;: &quot;owl-dots owl-dots_white&quot;,&quot;responsive&quot;: { &quot;0&quot;: {&quot;items&quot;: 1, &quot;loop&quot;: true }, &quot;581&quot;: {&quot;items&quot;: 2, &quot;loop&quot;: true } } }">
+                        <div class="tariffs__slide tariffs__slide_orange flex flex_column">
+                            <div class="tariffs__slide-top flex flex_vertical flex_center">
+                                <h3 class="h3 tariffs__slide-title">VIP</h3>
+                            </div>
+                            <div class="tariffs__slide-content">
+                                <ul class="tariffs__slide-list">
+                                    <li class="tariffs__slide-item">
+                                        <svg class="icon icon-fast" viewBox="0 0 30 30">
+                                            <use xlink:href="/app/icons/sprite.svg#fast"></use>
+                                        </svg><span>Моментальная публикация</span>
+                                    </li>
+                                    <li class="tariffs__slide-item">
+                                        <svg class="icon icon-warningBubble" viewBox="0 0 27 27">
+                                            <use xlink:href="/app/icons/sprite.svg#warningBubble"></use>
+                                        </svg><span>Обязательный ответ юриста</span>
+                                    </li>
+                                    <li class="tariffs__slide-item">
+                                        <svg class="icon icon-messages" viewBox="0 0 30 30">
+                                            <use xlink:href="/app/icons/sprite.svg#messages"></use>
+                                        </svg><span>Самый полный ответ</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tariffs__slide-bottom"><span class="tariffs__slide-price" data-value="/ руб">250</span><a class="btn btn_border-orange tariffs__slide-btn" href="#">Выбрать</a>
+                            </div>
+                        </div>
+                        <div class="tariffs__slide flex flex_column">
+                            <div class="tariffs__slide-top flex flex_vertical flex_center">
+                                <h3 class="h3 tariffs__slide-title">ПЛАТНЫЙ</h3>
+                            </div>
+                            <div class="tariffs__slide-content">
+                                <ul class="tariffs__slide-list">
+                                    <li class="tariffs__slide-item">
+                                        <svg class="icon icon-fast" viewBox="0 0 30 30">
+                                            <use xlink:href="/app/icons/sprite.svg#fast"></use>
+                                        </svg><span>Моментальная публикация</span>
+                                    </li>
+                                    <li class="tariffs__slide-item">
+                                        <svg class="icon icon-warningBubble" viewBox="0 0 27 27">
+                                            <use xlink:href="/app/icons/sprite.svg#warningBubble"></use>
+                                        </svg><span>Обязательный ответ юриста</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tariffs__slide-bottom"><span class="tariffs__slide-price" data-value="/ руб">100</span><a class="btn btn_border-orange tariffs__slide-btn" href="#">Выбрать</a>
+                            </div>
+                        </div>
+                        <div class="tariffs__slide flex flex_column">
+                            <div class="tariffs__slide-top flex flex_vertical flex_center">
+                                <h3 class="h3 tariffs__slide-title">БЕСПЛАТНЫЙ</h3>
+                            </div>
+                            <div class="tariffs__slide-content">
+                                <ul class="tariffs__slide-list">
+                                    <li class="tariffs__slide-item">
+                                        <svg class="icon icon-hourglass" viewBox="0 0 27 28">
+                                            <use xlink:href="/app/icons/sprite.svg#hourglass"></use>
+                                        </svg><span>Публикация в порядке очереди</span>
+                                    </li>
+                                    <li class="tariffs__slide-item">
+                                        <svg class="icon icon-questionBubble" viewBox="0 0 27 27">
+                                            <use xlink:href="/app/icons/sprite.svg#questionBubble"></use>
+                                        </svg><span>Гарантии ответа нет</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tariffs__slide-bottom"><span class="tariffs__slide-price" data-value="/ руб">0</span><a class="btn btn_border-orange tariffs__slide-btn" href="#">Выбрать</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="map">
+            <div class="container">
+                <div class="map__wrap">
+                    <div class="map__bg">
+                        <picture>
+                            <source type="image/webp" srcset="/app/img/map.webp">
+                                <img src="/app/img/map.png" class="object-fit map__bg-image" alt="Работаем по всей стране" />
+                        </picture>
+                    </div>
+                    <div class="map__inner">
+                        <div class="section-top section-top_gray content map__top">
+                            <h2 class="section-top__title color-green">Работаем по всей стране</h2>
+                            <p class="section-top__text">Мы консультируем наших клиентов и решаем различные юридичесике вопросы по всем регионам России</p>
+                        </div>
+                        <div class="statistics">
+                            <div class="statistics__items flex flex_justify">
+                                <div class="statistics__item"><span class="statistics__count" data-number="1500">0</span>
+                                    <h3 class="h3 statistics__subtitle">консультирующих юристов</h3>
+                                </div>
+                                <div class="statistics__item"><span class="statistics__count" data-number="5100">0</span>
+                                    <h3 class="h3 statistics__subtitle">решенных вопросов</h3>
+                                </div>
+                                <div class="statistics__item"><span class="statistics__count" data-number="1200">0</span>
+                                    <h3 class="h3 statistics__subtitle">проведенных консультаций</h3>
+                                </div>
+                                <div class="statistics__item"><span class="statistics__count" data-number="1300">0</span>
+                                    <h3 class="h3 statistics__subtitle">заказанных документов</h3>
+                                </div>
+                            </div><a class="btn btn_radius btn_medium btn_green statistics__btn" href="#">Перейти к услугам</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="advice">
+            <div class="advice__bg">
+                <div class="advice__bg-image">
+                    <picture>
+                        <source type="image/webp" srcset="/app/img/form-bg.webp">
+                            <img src="/app/img/form-bg.jpg" class="object-fit" alt="Консультация юриста онлайн" />
+                    </picture>
+                </div>
+            </div>
+            <div class="container">
+                <div class="advice__decor">
+                    <picture>
+                        <source type="image/webp" srcset="/app/img/block-decor-3.webp">
+                            <img src="/app/img/block-decor-3.png" class="object-fit" />
+                    </picture>
+                </div>
+                <div class="advice__inner flex">
+                    <div class="advice__cell advice__cell_left">
+                        <div class="section-top content section-top_left">
+                            <h2 class="section-top__title">Консультация юриста онлайн</h2>
+                            <p class="section-top__text">Задайте вопрос прямо сейчас, и его увидят сотни профессионалов со всей России. Первый ответ вы получите уже через 15&nbsp;минут! Юридическая помощь предоставляется на бесплатной и платной основе</p>
+                        </div>
+                        <ul class="advice__items" data-da="advice__inner, last, 580">
+                            <li class="advice__item">
+                                <svg class="icon icon-clock" viewBox="0 0 28 28">
+                                    <use xlink:href="/app/icons/sprite.svg#clock"></use>
+                                </svg><span>ответ в течении 15 минут</span>
+                            </li>
+                            <li class="advice__item">
+                                <svg class="icon icon-phone" viewBox="0 0 19 19">
+                                    <use xlink:href="/app/icons/sprite.svg#phone"></use>
+                                </svg><span>89 консультаций сегодня</span>
+                            </li>
+                            <li class="advice__item">
+                                <svg class="icon icon-user" viewBox="0 0 24 24">
+                                    <use xlink:href="/app/icons/sprite.svg#user"></use>
+                                </svg><span>98% довольных клиентов</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="advice__cell advice__cell_right">
+                        <form class="advice-form" action="#">
+                            <div class="advice-form__top">
+                                <div class="advice-form__avatar">
+                                    <picture>
+                                        <source type="image/webp" srcset="/app/img/avatar.webp">
+                                            <img src="/app/img/avatar.png" alt="Алексей Романов юрист-консультант" />
+                                    </picture>
+                                </div>
+                                <div class="advice-form__content content">
+                                    <p>Получите консультацию нашего юриста в течение 15 минут</p>
+                                    <p>Алексей Романов <span>юрист-консультант</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="advice-form__main">
+                                <textarea class="textarea-filed advice-form__textarea" name="question" placeholder="Введите ваш вопрос здесь..."></textarea>
+                                <blockquote class="advice-form__blockquote">Гарантируем конфиденциальность ваших персональных данных!</blockquote>
+                            </div>
+                            <div class="advice-form__bottom">
+                                <button class="btn btn_border-orange btn_radius advice-form__btn" type="submit">Задать вопрос</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="reviews">
+            <div class="container container_medium">
+                <div class="section-top section-top_gray content">
+                    <h2 class="section-top__title color-green">Отзывы наших клиентов</h2>
+                    <p class="section-top__text">Неважно, как мы оцениваем качество — важно, как его оцениваете вы, наши дорогие клиенты. Наша работа — превратить ваши жалобы в благодарность нам и нашей компании. Вы должны быть настолько довольны, чтобы рекомендовать нас своим друзьям
+                        и знакомым.</p>
+                </div>
+                <div class="reviews__wrap">
+                    <div class="reviews__slider js-slider" data-settings="{&quot;items&quot;: 3, &quot;margin&quot;: 45, &quot;loop&quot;: true, &quot;dots&quot;: false, &quot;nav&quot;: true, &quot;center&quot;: true,&quot;responsive&quot;: { &quot;0&quot;: {&quot;items&quot;: 1, &quot;stagePadding&quot;: 40, &quot;margin&quot;: 30 }, &quot;421&quot;: {&quot;items&quot;: 1, &quot;margin&quot;: 15, &quot;stagePadding&quot;: 50, &quot;nav&quot;: false }, &quot;581&quot;: {&quot;items&quot;: 2, &quot;margin&quot;: 20, &quot;stagePadding&quot;: 25 }, &quot;1581&quot;: {&quot;margin&quot;: 45} } }">
+                        <div class="reviews__slide">
+                            <p class="reviews__text">Спасибо, Вы очень помогли, и не взяли ни копейки! Обязательно буду рекомендовать вас своим знакомым. Спасибо, Вы очень помогли, и не взяли ни копейки! Обязательно буду рекомендовать вас своим знакомым.</p><span class="reviews__name">Александр, Москва</span>
+                            <svg
+                            class="icon icon-quote" viewBox="0 0 43 32">
+                                <use xlink:href="/app/icons/sprite.svg#quote"></use>
+                                </svg>
+                        </div>
+                        <div class="reviews__slide">
+                            <p class="reviews__text">Спасибо, Вы очень помогли, и не взяли ни копейки! Обязательно буду рекомендовать вас своим знакомым. Спасибо, Вы очень помогли, и не взяли ни копейки! Обязательно буду рекомендовать вас своим знакомым.</p><span class="reviews__name">Александр, Москва</span>
+                            <svg
+                            class="icon icon-quote" viewBox="0 0 43 32">
+                                <use xlink:href="/app/icons/sprite.svg#quote"></use>
+                                </svg>
+                        </div>
+                        <div class="reviews__slide">
+                            <p class="reviews__text">Спасибо, Вы очень помогли, и не взяли ни копейки! Обязательно буду рекомендовать вас своим знакомым. Спасибо, Вы очень помогли, и не взяли ни копейки! Обязательно буду рекомендовать вас своим знакомым.</p><span class="reviews__name">Александр, Москва</span>
+                            <svg
+                            class="icon icon-quote" viewBox="0 0 43 32">
+                                <use xlink:href="/app/icons/sprite.svg#quote"></use>
+                                </svg>
+                        </div>
+                        <div class="reviews__slide">
+                            <p class="reviews__text">Спасибо, Вы очень помогли, и не взяли ни копейки! Обязательно буду рекомендовать вас своим знакомым. Спасибо, Вы очень помогли, и не взяли ни копейки! Обязательно буду рекомендовать вас своим знакомым.</p><span class="reviews__name">Александр, Москва</span>
+                            <svg
+                            class="icon icon-quote" viewBox="0 0 43 32">
+                                <use xlink:href="/app/icons/sprite.svg#quote"></use>
+                                </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="registration">
+            <div class="registration__bg">
+                <div class="registration__bg-image">
+                    <picture>
+                        <source type="image/webp" srcset="/app/img/form-bg.webp">
+                            <img src="/app/img/form-bg.jpg" class="object-fit" alt="Регистрация на “Prav.io”" />
+                    </picture>
+                </div>
+            </div>
+            <div class="container">
+                <div class="registration__wrap">
+                    <div class="registration__top flex flex_justify flex_vertical">
+                        <h2 class="h2 registration__title">Регистрация на “Prav.io”</h2>
+                        <div class="registration__group flex flex_right"><a class="btn btn_border-white registration__top-btn" href="#">Пользователь</a><a class="btn btn_border-white btn_current registration__top-btn is-active" href="#">Юрист</a>
+                        </div>
+                    </div>
+                    <div class="registration__box">
+                        <div class="registration__image">
+                            <picture>
+                                <source type="image/webp" srcset="/app/img/registration-image.webp">
+                                    <img src="/app/img/registration-image.png" alt="" />
+                            </picture>
+                        </div>
+                        <div class="registration__inner flex flex_justify">
+                            <form class="registration__form" action="#">
+                                <div class="field">
+                                    <select class="field__select js-select" name="role">
+                                        <option value="1">Юрист</option>
+                                        <option value="2">Пользователь</option>
+                                        <option value="3">Нотариус</option>
+                                        <option value="4">Адвокат</option>
+                                    </select>
+                                </div>
+                                <div class="field">
+                                    <input class="field__input" type="text" placeholder="Имя" name="name">
+                                </div>
+                                <div class="field">
+                                    <input class="field__input" type="email" placeholder="Email (введите реальный email)" name="email">
+                                </div>
+                                <div class="field">
+                                    <input class="field__input" type="password" placeholder="Пароль" name="password" id="password">
+                                </div>
+                                <div class="field">
+                                    <input class="field__input" type="password" placeholder="Подтверждение пароля" name="cfmPassword">
+                                </div>
+                                <div class="registration__form-text">Нажимая кнопку «Зарегистрироваться», я принимаю условия <a href="#" class="color-green">Пользовательского соглашения</a> и условия <a href="#" class="color-green">Политики конфиденциальности</a>
+                                </div>
+                                <div class="registration__form-bottom">
+                                    <button class="btn btn_radius btn_green registration__btn" type="submit">Зарегистрироваться</button><span class="registration__login">Есть аккаунт?&#32;<a class="registration__link color-green" href="#">Войти</a></span>
+                                </div>
+                            </form>
+                            <div class="registration__content">
+                                <h4 class="h4 registration__subtitle color-green">Регистрация юриста</h4>
+                                <ul class="registration__list">
+                                    <li class="registration__item">
+                                        <svg class="icon icon-website" viewBox="0 0 30 30">
+                                            <use xlink:href="/app/icons/sprite.svg#website"></use>
+                                        </svg>
+                                        <div class="registration__info"><span class="registration__info-title color-green">Регистрируйтесь на сайте</span>
+                                            <p class="registration__info-text">Зарегистрируйтесь на проекте в качестве юриста</p>
+                                        </div>
+                                    </li>
+                                    <li class="registration__item">
+                                        <svg class="icon icon-user" viewBox="0 0 24 24">
+                                            <use xlink:href="/app/icons/sprite.svg#user"></use>
+                                        </svg>
+                                        <div class="registration__info"><span class="registration__info-title color-green">Заполните профиль</span>
+                                            <p class="registration__info-text">Чем полнее заполнен профиль, тем выше доверие клиентов</p>
+                                        </div>
+                                    </li>
+                                    <li class="registration__item">
+                                        <svg class="icon icon-question" viewBox="0 0 20 20">
+                                            <use xlink:href="/app/icons/sprite.svg#question"></use>
+                                        </svg>
+                                        <div class="registration__info"><span class="registration__info-title color-green">Отвечайте на вопросы</span>
+                                            <p class="registration__info-text">Помогайте клиентам в решении вопросов, оформлении документов и оказывая устные консультации</p>
+                                        </div>
+                                    </li>
+                                    <li class="registration__item">
+                                        <svg class="icon icon-dollar" viewBox="0 0 28 28">
+                                            <use xlink:href="/app/icons/sprite.svg#dollar"></use>
+                                        </svg>
+                                        <div class="registration__info"><span class="registration__info-title color-green">Отвечайте на вопросы</span>
+                                            <p class="registration__info-text">Помогайте клиентам в решении вопросов, оформлении документов и оказывая устные консультации</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="banner">
+            <div class="banner__bg">
+                <div class="banner__bg-image">
+                    <picture>
+                        <source type="image/webp" srcset="/app/img/banner-bg.webp">
+                            <img src="/app/img/banner-bg.jpg" class="object-fit" alt="" />
+                    </picture>
+                </div>
+            </div>
+            <div class="container">
+                <div class="banner__inner flex flex_vertical flex_justify">
+                    <div class="banner__content content">
+                        <h4 class="color-green">Консультация юриста<br> в течение 15 минут</h4>
+                        <p>Задайте вопрос прямо сейчас, и его увидят сотни профессионалов со всей России.</p>
+                    </div>
+                    <div class="banner__cell"><a class="btn btn_green banner__cell-btn" href="tel:+74954077755">Позвонить</a><span class="banner__cell-text">или</span><a class="btn btn_green banner__cell-btn" href="tel:+74954077755">Написать</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__logo">
+                <a class="footer__logo-link" href="#">
+                    <picture>
+                        <source type="image/webp" srcset="/app/img/logo.webp">
+                            <img src="/app/img/logo.png" class="footer__logo-image" alt="Логотип Pravio" />
+                    </picture>
+                </a>
+            </div>
+            <div class="footer__row flex">
+                <div class="footer__col">
+                    <h4 class="footer__title">О проекте</h4>
+                    <ul class="footer__items">
+                        <li class="footer__item"><a class="footer__link" href="#">Команда</a>
+                        </li>
+                        <li class="footer__item"><a class="footer__link" href="#">Контакты</a>
+                        </li>
+                        <li class="footer__item"><a class="footer__link" href="#">FAQ</a>
+                        </li>
+                        <li class="footer__item"><a class="footer__link" href="#">Работа юристу</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__title">Услуги</h4>
+                    <ul class="footer__items">
+                        <li class="footer__item"><a class="footer__link" href="#">Вопросы</a>
+                        </li>
+                        <li class="footer__item"><a class="footer__link" href="#">- Платные</a>
+                        </li>
+                        <li class="footer__item"><a class="footer__link" href="#">- Бесплатные</a>
+                        </li>
+                        <li class="footer__item"><a class="footer__link" href="#">Подготовить документ</a>
+                        </li>
+                        <li class="footer__item"><a class="footer__link" href="#">Консультация по тел</a>
+                        </li>
+                        <li class="footer__item"><a class="footer__link" href="#">Круглосуточная консультация юриста</a>
+                        </li>
+                        <li class="footer__item"><a class="footer__link" href="#">Консультация по юридическим вопросам</a>
+                        </li>
+                        <li class="footer__item"><a class="footer__link" href="#">Юридическая помощь</a>
+                        </li>
+                        <li class="footer__item"><a class="footer__link" href="#">Юридические услуги</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__title">Юристы</h4>
+                    <ul class="footer__items">
+                        <li class="footer__item"><a class="footer__link" href="#">Все юристы</a>
+                        </li>
+                        <li class="footer__item"><a class="footer__link" href="#">- Юристы Краснодара</a>
+                        </li>
+                        <li class="footer__item"><a class="footer__link" href="#">- Юристы Нижнего</a>
+                        </li>
+                        <li class="footer__item"><a class="footer__link" href="#">Новгорода</a>
+                        </li>
+                        <li class="footer__item"><a class="footer__link" href="#">- Юристы Омска</a>
+                        </li>
+                        <li class="footer__item"><a class="footer__link" href="#">- Юристы Самары</a>
+                        </li>
+                        <li class="footer__item"><a class="footer__link" href="#">- Юристы Санкт-Петербурга</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__title">Адреса организаций</h4>
+                    <ul class="footer__items">
+                        <li class="footer__item"><a class="footer__link" href="#">Все организации</a>
+                        </li>
+                        <li class="footer__item"><a class="footer__link" href="#">- МФЦ</a>
+                        </li>
+                        <li class="footer__item"><a class="footer__link" href="#">- Нотариусы</a>
+                        </li>
+                        <li class="footer__item"><a class="footer__link" href="#">- Суды</a>
+                        </li>
+                        <li class="footer__item"><a class="footer__link" href="#">- База приставов России</a>
+                        </li>
+                        <li class="footer__item"><a class="footer__link" href="#">Публикации</a>
+                        </li>
+                        <li class="footer__item"><a class="footer__link" href="#">Образцы документов</a>
+                        </li>
+                        <li class="footer__item"><a class="footer__link" href="#">Полезные инструменты</a>
+                        </li>
+                        <li class="footer__item"><a class="footer__link" href="#">Кодексы и законы РФ</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__info">
+                    <div class="footer__cell">
+                        <h4 class="footer__title">Бесплатная горячая линия</h4>
+                        <a class="footer__phone" href="tel:+74954077755">
+                            <svg class="icon icon-phone" viewBox="0 0 19 19">
+                                <use xlink:href="/app/icons/sprite.svg#phone"></use>
+                            </svg><span class="footer__phone-text">+7 (495) 40-777-55</span>
+                        </a>
+                    </div>
+                    <div class="footer__cell">
+                        <h4 class="footer__title">Главный офис</h4>
+                        <a class="footer__address" href="#">
+                            <svg class="icon icon-pin" viewBox="0 0 27 27">
+                                <use xlink:href="/app/icons/sprite.svg#pin"></use>
+                            </svg><span class="footer__address-text"><strong>г. Москва,</strong>Каширский пр-д.,
+д. 21, ком. 2, пом. 1</span>
+                        </a>
+                    </div>
+                    <div class="socials">
+                        <a class="socials__link" href="#">
+                            <svg class="icon icon-fb" viewBox="0 0 20 20">
+                                <use xlink:href="/app/icons/sprite.svg#fb"></use>
+                            </svg>
+                        </a>
+                        <a class="socials__link" href="#">
+                            <svg class="icon icon-vk" viewBox="0 0 20 20">
+                                <use xlink:href="/app/icons/sprite.svg#vk"></use>
+                            </svg>
+                        </a>
+                        <a class="socials__link" href="#">
+                            <svg class="icon icon-te" viewBox="0 0 21 20">
+                                <use xlink:href="/app/icons/sprite.svg#te"></use>
+                            </svg>
+                        </a>
+                        <a class="socials__link" href="#">
+                            <svg class="icon icon-wh" viewBox="0 0 21 20">
+                                <use xlink:href="/app/icons/sprite.svg#wh"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <div class="container"><span class="footer__copyright-text">Prav.io © 2021 Все права защищены</span>
+            </div>
+        </div>
+    </footer>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="/app/js/app.js?v=1617378397599"></script>
+</body>
+
+</html>
