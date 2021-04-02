@@ -11,7 +11,6 @@ var sliders = {
         loop: false,
         autoplay: false,
         autoplayTimeout:2500,
-        autoplayHoverPause:true,
         smartSpeed: 600,
         margin: 20,
         responsiveRefreshRate: 50,

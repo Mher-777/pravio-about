@@ -16,10 +16,10 @@
     }
     @include large-mobile {
       width: calc(100% + 4rem);
-      margin: -1.5rem -2rem;
+      margin: -3rem -2rem;
     }
     @include small-mobile {
-      margin: 0 -2rem;
+      margin: -2rem;
     }
   }
   &__slider {
@@ -33,53 +33,44 @@
       margin-top: 1rem;
     }
     .owl-stage-outer {
-      margin-bottom: 5rem;
+      margin-bottom: 3rem;
       overflow: visible;
     }
     .owl-stage {
       display: flex;
-      align-items: center;
     }
     .owl-item {
       padding: 1.5rem;
-      @include small-mobile {
-        padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      @include large-mobile {
+        padding: 3rem 0;
       }
       &.center {
 
         .reviews {
           &__slide {
-            font-size: 1.8rem;
             color: var(--color-bg);
             border-radius: 1rem;
-            padding: 6rem 2.8rem 4rem;
+            padding: 6rem 2.8rem 2rem;
             transform: scale(1.15);
             .icon {
               opacity: 1;
             }
             @media only screen and (max-width: 1580px) {
-              padding: 4rem 2.5rem;
-              transform: scale(1.1);
+              transform: scale(1.1, 1.2);
             }
             @include small-tablet {
-              font-size: 1.6rem;
+              padding: 2.5rem;
+              transform: scale(1.2, 1.2);
             }
             @include large-mobile {
-              font-size: 1.4rem;
-              padding: 3rem 2.5rem;
+              transform: scale(1, 1.2);
             }
             @include small-mobile {
+              transform: scale(1.12,1.2);
               font-size: 1.2rem;
-              padding: 2.5rem 2rem 3.5rem;
-            }
-          }
-          &__name {
-            font-size: 1.4rem;
-            @include large-mobile {
-              font-size: 1.2rem;
-            }
-            @include small-mobile {
-              font-size: 1rem;
             }
           }
         }
@@ -93,15 +84,20 @@
     color: rgba(160, 160, 160, 0.3);
     padding: 6rem 2.8rem 2rem;
     text-align: center;
-    height: 100%;
     transition: all linear .2s;
     position: relative;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     @media only screen and (max-width: 1580px) {
-      padding: 4rem 2rem 2rem;
+      padding: 4rem 2.5rem;
+    }
+
+    @include small-tablet {
+      font-size: 1.6rem;
+      padding: 2.5rem;
     }
     @include large-mobile {
       border-radius: 1rem;
+      font-size: 1.3rem;
     }
     @include small-mobile {
       font-size: 1.2rem;
@@ -130,8 +126,13 @@
     display: block;
     transition: all linear .2s;
     text-align: right;
+    font-size: 1.4rem;
     @include large-mobile {
       margin-top: 1.5rem;
+      font-size: 1.2rem;
+    }
+    @include small-mobile {
+      font-size: 1rem;
     }
   }
 }

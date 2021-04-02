@@ -1,4 +1,4 @@
-import { config } from "../config";
+import {config} from "../config";
 
 var defaults = {
 
@@ -18,6 +18,7 @@ var defaults = {
             $(window).resize(function () {
                 mobileVersion()
             })
+
             function mobileVersion() {
                 let elem = $(element);
                 if ($(window).width() < 860) {
@@ -26,12 +27,13 @@ var defaults = {
                         $(this).next().toggleClass('is-show')
                     })
                     $(document).on('click', function () {
-                        if(!elem.next().length && elem.next().hasClass('is-show')) {
+                        if (!elem.next().length && elem.next().hasClass('is-show')) {
                             elem.next().removeClass('is-show')
                         }
                     });
                 }
             }
+
             mobileVersion()
         }
 
@@ -39,18 +41,17 @@ var defaults = {
             const btn = $('.js-btn-menu')
             const menu = $('.header__nav')
             btn.on('click', function () {
-                function open() {
-                    $(this).toggleClass('is-active')
-                    menu.slideToggle()
-                    config.container.toggleClass('menu-open')
-                }
-                open()
+                $(this).toggleClass('is-active')
+                menu.slideToggle()
+                config.container.toggleClass('menu-open')
             })
+
             function close() {
                 btn.removeClass('is-active')
                 menu.removeAttr('style')
                 config.container.removeClass('menu-open')
             }
+
             $(window).resize(function () {
                 close()
             })

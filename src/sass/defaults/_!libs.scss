@@ -1,3 +1,6 @@
 @import "../../node_modules/sass-mediaqueries/_media-queries";
 @import "../../node_modules/owl.carousel/src/scss/owl.carousel";
 @import "../../node_modules/select2/dist/css/select2.min";
+.select2-container--classic .select2-results>.select2-results__options, .select2-container--default .select2-results>.select2-results__options {
+  max-height: 20rem;
+}
