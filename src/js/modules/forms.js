@@ -39,7 +39,6 @@ var forms = {
 				},
 				submitHandler: (form) => {
 					var data = $(form).serialize();
-					console.log(data)
 					$.ajax({
 						type: "POST",
 						url: $(form).attr("action"),
@@ -49,6 +48,7 @@ var forms = {
 						},
 					});
 				},
+				debug: false,
 				rules: {
 					search: {
 						required: true,
@@ -70,7 +70,7 @@ var forms = {
 					cfmPassword: {
 						required: true,
 						minlength : 6,
-						equalTo : ".js-repeat1, .js-repeat2"
+						equalTo : "#password"
 					},
 				},
 				messages: {
@@ -90,6 +90,9 @@ var forms = {
 						minlength: 'Пожалуйста, введите не менее 6 символов.',
 						equalTo: 'Пожалуйста, введите одинаковый пароль',
 					},
+					search: {
+						required: ''
+					}
 				}
 			});
 		});

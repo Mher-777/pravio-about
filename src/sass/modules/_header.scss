@@ -112,7 +112,9 @@
   }
   &__logo {
     max-width: 14rem;
-
+    img {
+      width: 100%;
+    }
     @include large-mobile {
       max-width: 10rem;
     }

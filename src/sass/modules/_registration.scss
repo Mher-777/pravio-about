@@ -29,6 +29,9 @@
   &__wrap {
     max-width: 945px;
     margin: 0 auto;
+    @include min-4k {
+      max-width: 94.5rem;
+    }
   }
   &__top {
     margin-bottom: 3rem;

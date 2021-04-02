@@ -1,0 +1,110 @@
+.footer {
+  background-color: #078A71;
+  padding-top: 3.5rem;
+  &__row {
+    @include large-mobile {
+      margin-right: -2rem;
+    }
+  }
+  &__logo {
+    display: none;
+    &-link {
+      display: block;
+    }
+    &-image {
+      width: 100%;
+    }
+    @include large-mobile {
+      display: block;
+      margin: 0 auto;
+      width: 18rem;
+    }
+  }
+  &__col {
+    width: 19.5rem;
+    padding-right: 1rem;
+    @include small-tablet {
+      max-width: 25%;
+      flex: 1 1 auto;
+    }
+    @include large-mobile {
+      max-width: 50%;
+      padding-right: 2rem;
+      margin-top: 2.5rem;
+    }
+  }
+  &__link {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &__info {
+    max-width: 24rem;
+    margin-left: auto;
+    @include small-tablet {
+      margin-left: 0;
+      margin-top: 2.5rem;
+      max-width: 40rem;
+    }
+    @include large-mobile {
+      margin: 2.5rem auto 0;
+    }
+  }
+  &__item {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    @include small-mobile {
+      font-size: 1.2rem;
+    }
+  }
+  &__items {
+    margin-top: 1.5rem;
+  }
+  &__title {
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+  &__copyright {
+    background-color: #096755;
+    text-align: center;
+    font-size: 1.6rem;
+    margin-top: 3rem;
+    padding: .7rem 0;
+    @include small-mobile {
+      font-size: 1.4rem;
+    }
+  }
+  &__cell {
+    margin-bottom: 2rem;
+    @include large-mobile {
+      max-width: 27rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  &__phone,
+  &__address{
+    font-weight: 700;
+    display: flex;
+    margin-top: .5rem;
+    .icon {
+      flex-shrink: 0;
+      fill: var(--color-white);
+      margin-right: 1rem;
+    }
+  }
+  &__address {
+    max-width: 15rem;
+    @include small-tablet {
+      max-width: 100%;
+    }
+    span {
+      font-weight: 400;
+      font-size: 1.2rem;
+    }
+    strong {
+      font-size: 1.6rem;
+      display: block;
+    }
+  }
+}

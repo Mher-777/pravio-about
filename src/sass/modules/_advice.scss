@@ -166,6 +166,9 @@
     min-width: 7.5rem;
     height: 7.5rem;
     margin-right: 5 / 440 *100%;
+    img {
+      width: 100%;
+    }
     @include small-tablet {
       margin-top: -.7rem;
     }

@@ -28,6 +28,9 @@
 
 html {
 	font-size: 62.5%; // 1rem = 10px
+	@include min-4k {
+		font-size: 100vw / (1930/10)
+	}
 	@include small-desktop{
 		font-size: 100vw / (1200/10); // 1rem = 10px
 	}
