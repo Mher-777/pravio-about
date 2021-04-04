@@ -70,7 +70,6 @@ var forms = {
 					cfmPassword: {
 						required: true,
 						minlength : 6,
-						equalTo : "#password"
 					},
 				},
 				messages: {
@@ -91,6 +90,9 @@ var forms = {
 						equalTo: 'Пожалуйста, введите одинаковый пароль',
 					},
 					search: {
+						required: ''
+					},
+					question: {
 						required: ''
 					}
 				}

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
     <title>About</title>
-    <link rel="stylesheet" href="/app/css/app.css?v=1617402517663">
+    <link rel="stylesheet" href="/app/css/app.css?v=1617566739227">
     <script>
         window.MSInputMethodContext && document.documentMode && document.write('<script src="https://cdn.jsdelivr.net/gh/nuxodin/ie11CustomProperties@4.1.0/ie11CustomProperties.min.js"><\\/script>');
     </script>
@@ -465,10 +465,76 @@
                 <div class="registration__wrap">
                     <div class="registration__top flex flex_justify flex_vertical">
                         <h2 class="h2 registration__title">Регистрация на “Prav.io”</h2>
-                        <div class="registration__group flex flex_right"><a class="btn btn_border-white registration__top-btn" href="#">Пользователь</a><a class="btn btn_border-white btn_current registration__top-btn is-active" href="#">Юрист</a>
+                        <div class="registration__group flex flex_right"><a class="btn btn_border-white registration__top-btn js-tab" href="#" data-id="user">Пользователь</a><a class="btn btn_border-white btn_current registration__top-btn is-active js-tab" href="#" data-id="lawyer">Юрист</a>
                         </div>
                     </div>
-                    <div class="registration__box">
+                    <div class="registration__box js-content hidden" data-content-id="user">
+                        <div class="registration__image">
+                            <picture>
+                                <source type="image/webp" srcset="/app/img/registration-image.webp">
+                                    <img src="/app/img/registration-image.png" width="508" height="" alt="" />
+                            </picture>
+                        </div>
+                        <div class="registration__inner flex flex_justify">
+                            <form class="registration__form" action="#">
+                                <div class="field">
+                                    <input class="field__input" type="text" placeholder="Имя" name="name">
+                                </div>
+                                <div class="field">
+                                    <input class="field__input" type="email" placeholder="Email (введите реальный email)" name="email">
+                                </div>
+                                <div class="field">
+                                    <input class="field__input" type="password" placeholder="Пароль" name="password">
+                                </div>
+                                <div class="field">
+                                    <input class="field__input" type="password" placeholder="Подтверждение пароля" name="cfmPassword">
+                                </div>
+                                <div class="registration__form-text">Нажимая кнопку «Зарегистрироваться», я принимаю условия <a href="#" class="color-green">Пользовательского соглашения</a> и условия <a href="#" class="color-green">Политики конфиденциальности</a>
+                                </div>
+                                <div class="registration__form-bottom">
+                                    <button class="btn btn_radius btn_green registration__btn" type="submit">Зарегистрироваться</button><span class="registration__login">Есть аккаунт?&#32;<a class="registration__link color-green" href="#">Войти</a></span>
+                                </div>
+                            </form>
+                            <div class="registration__content">
+                                <h3 class="h4 registration__subtitle color-green">Регистрация пользователя</h3>
+                                <ul class="registration__list">
+                                    <li class="registration__item">
+                                        <svg class="icon icon-website" viewBox="0 0 30 30">
+                                            <use xlink:href="/app/icons/sprite.svg#website"></use>
+                                        </svg>
+                                        <div class="registration__info"><span class="registration__info-title color-green">Регистрация</span>
+                                            <p class="registration__info-text">Зарегистрируйтесь на сайте для дальнейшего пользования услугами</p>
+                                        </div>
+                                    </li>
+                                    <li class="registration__item">
+                                        <svg class="icon icon-user" viewBox="0 0 24 24">
+                                            <use xlink:href="/app/icons/sprite.svg#user"></use>
+                                        </svg>
+                                        <div class="registration__info"><span class="registration__info-title color-green">Профиль пользователя</span>
+                                            <p class="registration__info-text">Заполните Ваш профиль , укажите основную информацию о себе</p>
+                                        </div>
+                                    </li>
+                                    <li class="registration__item">
+                                        <svg class="icon icon-question" viewBox="0 0 20 20">
+                                            <use xlink:href="/app/icons/sprite.svg#question"></use>
+                                        </svg>
+                                        <div class="registration__info"><span class="registration__info-title color-green">Консультация юриста</span>
+                                            <p class="registration__info-text">Вы получите юридическую консультацию и конкретные шаги по решению проблемы</p>
+                                        </div>
+                                    </li>
+                                    <li class="registration__item">
+                                        <svg class="icon icon-dollar" viewBox="0 0 28 28">
+                                            <use xlink:href="/app/icons/sprite.svg#dollar"></use>
+                                        </svg>
+                                        <div class="registration__info"><span class="registration__info-title color-green">Доступная стоимость</span>
+                                            <p class="registration__info-text">На сайте Вы можете получить консультацию как на платной основе, так и бесплатно</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="registration__box js-content" data-content-id="lawyer">
                         <div class="registration__image">
                             <picture>
                                 <source type="image/webp" srcset="/app/img/registration-image.webp">
@@ -492,7 +558,7 @@
                                     <input class="field__input" type="email" placeholder="Email (введите реальный email)" name="email">
                                 </div>
                                 <div class="field">
-                                    <input class="field__input" type="password" placeholder="Пароль" name="password" id="password">
+                                    <input class="field__input" type="password" placeholder="Пароль" name="password">
                                 </div>
                                 <div class="field">
                                     <input class="field__input" type="password" placeholder="Подтверждение пароля" name="cfmPassword">
@@ -704,7 +770,7 @@
         </div>
     </footer>
     <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="/app/js/app.js?v=1617402517663"></script>
+    <script src="/app/js/app.js?v=1617566739228"></script>
 </body>
 
 </html>

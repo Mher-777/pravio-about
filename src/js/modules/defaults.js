@@ -94,11 +94,33 @@ var defaults = {
                 });
         }
 
+        const tabs = () => {
+            const tab = $('.js-tab')
+            const content = $('.js-content')
+            tab.on('click', function (e) {
+                e.preventDefault()
+                const $this = $(this)
+                tab.removeClass('is-active')
+                $this.addClass('is-active')
+
+                content.each(function (el) {
+                    if($this.attr('data-id') === $(this).attr('data-content-id')) {
+                        $(this).addClass('is-active')
+                        $(this).show()
+                    } else {
+                        $(this).removeClass('is-active')
+                        $(this).hide()
+                    }
+                })
+
+            })
+        }
         scrollCounter('.statistics', '.statistics__count')
 
         toggleSlide('.js-mobile-toggle')
         resizeAnimationStopper()
         menu()
+        tabs()
     },
 
     init: () => {
